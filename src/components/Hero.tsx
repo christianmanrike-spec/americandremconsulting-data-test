@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import logoClaro from "@/assets/logo-claro.png";
 
 const Hero = () => {
   return (
@@ -18,11 +19,13 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 px-4 py-20">
         <div className="max-w-4xl mx-auto text-center text-white">
-          {/* Logo Placeholder */}
+          {/* Logo */}
           <div className="mb-8 flex justify-center">
-            <div className="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-lg border border-white/20">
-              <h2 className="text-2xl font-bold">American Dream Consulting</h2>
-            </div>
+            <img 
+              src={logoClaro} 
+              alt="American Dream Consulting" 
+              className="h-16 md:h-20 w-auto"
+            />
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">

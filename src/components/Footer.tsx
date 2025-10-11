@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Mail } from "lucide-react";
+import logoClaro from "@/assets/logo-claro.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,11 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Brand Section */}
             <div>
-              <h3 className="text-2xl font-bold mb-4">American Dream Consulting</h3>
+              <img 
+                src={logoClaro} 
+                alt="American Dream Consulting" 
+                className="h-12 w-auto mb-4"
+              />
               <p className="text-primary-foreground/80">
                 Tu camino hacia el sueño americano comienza aquí.
               </p>
