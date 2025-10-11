@@ -24,7 +24,7 @@ const Hero = () => {
             <img 
               src={logoClaro} 
               alt="American Dream Consulting" 
-              className="h-16 md:h-20 w-auto"
+              className="h-48 md:h-60 w-auto"
             />
           </div>
 
