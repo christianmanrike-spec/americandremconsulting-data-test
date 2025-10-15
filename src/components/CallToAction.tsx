@@ -49,11 +49,14 @@ const CallToAction = () => {
               <p className="font-semibold mb-1">Teléfono</p>
               <p className="text-white/80 text-sm">[Tu número aquí]</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300">
+            <a 
+              href="mailto:contacto@americandream.com.co"
+              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 block"
+            >
               <Mail className="w-8 h-8 mx-auto mb-3" />
               <p className="font-semibold mb-1">Email</p>
-              <p className="text-white/80 text-sm">[Tu email aquí]</p>
-            </div>
+              <p className="text-white/80 text-sm">contacto@americandream.com.co</p>
+            </a>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300">
               <MessageCircle className="w-8 h-8 mx-auto mb-3" />
               <p className="font-semibold mb-1">WhatsApp</p>
