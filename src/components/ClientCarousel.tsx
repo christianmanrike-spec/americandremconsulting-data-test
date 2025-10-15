@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import cliente1 from "@/assets/cliente-1.png";
 import cliente2 from "@/assets/cliente-2.png";
 import cliente3 from "@/assets/cliente-3.png";
@@ -42,15 +41,6 @@ const clientImages = [
 ];
 
 const ClientCarousel = () => {
-  const [isPaused, setIsPaused] = useState(false);
-
-  useEffect(() => {
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReducedMotion) {
-      setIsPaused(true);
-    }
-  }, []);
-
   return (
     <section className="py-12 md:py-20 bg-background overflow-hidden">
       <div className="container px-4 mb-12">
@@ -68,14 +58,8 @@ const ClientCarousel = () => {
         <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
         {/* First row - scrolls right to left */}
-        <div 
-          className="marquee-row mb-6 md:mb-8"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-          onTouchStart={() => setIsPaused(true)}
-          onTouchEnd={() => setIsPaused(false)}
-        >
-          <div className={`marquee-content ${isPaused ? 'paused' : ''}`}>
+        <div className="marquee-row mb-6 md:mb-8">
+          <div className="marquee-content">
             {[...clientImages, ...clientImages].map((client, index) => (
               <div key={`row1-${index}`} className="marquee-item">
                 <img
@@ -90,14 +74,8 @@ const ClientCarousel = () => {
         </div>
 
         {/* Second row - scrolls left to right */}
-        <div 
-          className="marquee-row-reverse"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-          onTouchStart={() => setIsPaused(true)}
-          onTouchEnd={() => setIsPaused(false)}
-        >
-          <div className={`marquee-content-reverse ${isPaused ? 'paused' : ''}`}>
+        <div className="marquee-row-reverse">
+          <div className="marquee-content-reverse">
             {[...clientImages, ...clientImages].map((client, index) => (
               <div key={`row2-${index}`} className="marquee-item">
                 <img
@@ -136,11 +114,6 @@ const ClientCarousel = () => {
           animation: scroll-right 45s linear infinite;
         }
 
-        .marquee-content.paused,
-        .marquee-content-reverse.paused {
-          animation-play-state: paused;
-        }
-
         .marquee-item {
           flex-shrink: 0;
         }
@@ -170,26 +143,24 @@ const ClientCarousel = () => {
           }
         }
 
-        /* Mobile: single scrollable row */
+        /* Mobile: continuous animation on both desktop and mobile */
         @media (max-width: 768px) {
           .marquee-row-reverse {
-            display: none;
+            display: flex;
           }
           
-          .marquee-row {
-            overflow-x: auto;
-            overflow-y: hidden;
-            -webkit-overflow-scrolling: touch;
-            scroll-snap-type: x mandatory;
+          .marquee-row,
+          .marquee-row-reverse {
+            overflow: hidden;
           }
 
-          .marquee-content {
-            animation: none;
-            padding: 0 1rem;
+          .marquee-content,
+          .marquee-content-reverse {
+            animation: scroll-left 40s linear infinite;
           }
 
-          .marquee-item {
-            scroll-snap-align: center;
+          .marquee-content-reverse {
+            animation: scroll-right 45s linear infinite;
           }
         }
       `}</style>
