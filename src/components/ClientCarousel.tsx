@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import cliente1 from "@/assets/cliente-1.png";
 import cliente2 from "@/assets/cliente-2.png";
 import cliente3 from "@/assets/cliente-3.png";
 import cliente4 from "@/assets/cliente-4.png";
@@ -9,18 +10,35 @@ import cliente8 from "@/assets/cliente-8.png";
 import cliente9 from "@/assets/cliente-9.png";
 import cliente10 from "@/assets/cliente-10.png";
 import cliente11 from "@/assets/cliente-11.png";
+import cliente12 from "@/assets/cliente-12.png";
+import cliente13 from "@/assets/cliente-13.png";
+import cliente14 from "@/assets/cliente-14.png";
+import cliente15 from "@/assets/cliente-15.png";
+import cliente16 from "@/assets/cliente-16.png";
+import cliente17 from "@/assets/cliente-17.png";
+import cliente18 from "@/assets/cliente-18.png";
+import cliente19 from "@/assets/cliente-19.png";
 
 const clientImages = [
-  { src: cliente2, alt: "Cliente American Dream Consulting - historia de éxito" },
-  { src: cliente3, alt: "Cliente American Dream Consulting - visa aprobada" },
-  { src: cliente4, alt: "Cliente American Dream Consulting - caso exitoso" },
-  { src: cliente5, alt: "Cliente American Dream Consulting - testimonio real" },
-  { src: cliente6, alt: "Cliente American Dream Consulting - éxito garantizado" },
-  { src: cliente7, alt: "Cliente American Dream Consulting - sueño cumplido" },
-  { src: cliente8, alt: "Cliente American Dream Consulting - familia feliz" },
-  { src: cliente9, alt: "Cliente American Dream Consulting - nueva vida" },
-  { src: cliente10, alt: "Cliente American Dream Consulting - aprobación exitosa" },
-  { src: cliente11, alt: "Cliente American Dream Consulting - historia inspiradora" },
+  { src: cliente1, alt: "Cliente American Dream Consulting - historia de éxito" },
+  { src: cliente2, alt: "Cliente American Dream Consulting - visa aprobada" },
+  { src: cliente3, alt: "Cliente American Dream Consulting - caso exitoso" },
+  { src: cliente4, alt: "Cliente American Dream Consulting - testimonio real" },
+  { src: cliente5, alt: "Cliente American Dream Consulting - éxito garantizado" },
+  { src: cliente6, alt: "Cliente American Dream Consulting - sueño cumplido" },
+  { src: cliente7, alt: "Cliente American Dream Consulting - familia feliz" },
+  { src: cliente8, alt: "Cliente American Dream Consulting - nueva vida" },
+  { src: cliente9, alt: "Cliente American Dream Consulting - aprobación exitosa" },
+  { src: cliente10, alt: "Cliente American Dream Consulting - historia inspiradora" },
+  { src: cliente11, alt: "Cliente American Dream Consulting - caso de éxito" },
+  { src: cliente12, alt: "Cliente American Dream Consulting - visa familiar aprobada" },
+  { src: cliente13, alt: "Cliente American Dream Consulting - familia reunida" },
+  { src: cliente14, alt: "Cliente American Dream Consulting - familia con visa aprobada" },
+  { src: cliente15, alt: "Cliente American Dream Consulting - certificado de aprobación" },
+  { src: cliente16, alt: "Cliente American Dream Consulting - documento aprobado" },
+  { src: cliente17, alt: "Cliente American Dream Consulting - cliente satisfecho" },
+  { src: cliente18, alt: "Cliente American Dream Consulting - éxito comprobado" },
+  { src: cliente19, alt: "Cliente American Dream Consulting - victoria documentada" },
 ];
 
 const ClientCarousel = () => {
