@@ -72,8 +72,15 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-accent hover:bg-accent/90 text-white text-lg px-10 py-6 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            asChild
           >
-            Agenda tu Consulta Ahora
+            <a 
+              href="https://api.whatsapp.com/send/?phone=573133906650&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Agenda tu Consulta Ahora
+            </a>
           </Button>
         </div>
       </div>

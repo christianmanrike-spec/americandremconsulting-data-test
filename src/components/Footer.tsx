@@ -25,9 +25,42 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">Enlaces Rápidos</h4>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li><a href="#servicios" className="hover:text-white transition-colors">Servicios</a></li>
-                <li><a href="#testimonios" className="hover:text-white transition-colors">Testimonios</a></li>
-                <li><a href="#contacto" className="hover:text-white transition-colors">Contacto</a></li>
+                <li>
+                  <a 
+                    href="#servicios" 
+                    className="hover:text-white transition-colors"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.querySelector('#servicios')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    Servicios
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#testimonios" 
+                    className="hover:text-white transition-colors"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.querySelector('#testimonios')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    Testimonios
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#contacto" 
+                    className="hover:text-white transition-colors"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.querySelector('#contacto')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    Contacto
+                  </a>
+                </li>
               </ul>
             </div>
 

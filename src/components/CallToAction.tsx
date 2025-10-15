@@ -3,7 +3,7 @@ import { ArrowRight, Phone, Mail, MessageCircle } from "lucide-react";
 
 const CallToAction = () => {
   return (
-    <section className="py-24 gradient-hero">
+    <section id="contacto" className="py-24 gradient-hero">
       <div className="container px-4">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -29,26 +29,43 @@ const CallToAction = () => {
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-white text-lg px-10 py-6 h-auto shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105 group"
+              asChild
             >
-              Contáctanos Ahora
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <a 
+                href="https://api.whatsapp.com/send/?phone=573133906650&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contáctanos Ahora
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             <Button 
               size="lg" 
               variant="outline"
               className="bg-white/10 hover:bg-white/20 text-white border-white/30 hover:border-white/50 text-lg px-10 py-6 h-auto backdrop-blur-sm transition-all duration-300 hover:scale-105"
+              asChild
             >
-              Agenda una Llamada
+              <a 
+                href="https://api.whatsapp.com/send/?phone=573133906650&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agenda una Llamada
+              </a>
             </Button>
           </div>
 
           {/* Contact Options */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300">
+            <a 
+              href="tel:+573133906650"
+              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 block"
+            >
               <Phone className="w-8 h-8 mx-auto mb-3" />
               <p className="font-semibold mb-1">Teléfono</p>
-              <p className="text-white/80 text-sm">[Tu número aquí]</p>
-            </div>
+              <p className="text-white/80 text-sm">313 3906650</p>
+            </a>
             <a 
               href="mailto:contacto@americandream.com.co"
               className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 block"
@@ -57,11 +74,16 @@ const CallToAction = () => {
               <p className="font-semibold mb-1">Email</p>
               <p className="text-white/80 text-sm">contacto@americandream.com.co</p>
             </a>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300">
+            <a 
+              href="https://api.whatsapp.com/send/?phone=573133906650&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 block"
+            >
               <MessageCircle className="w-8 h-8 mx-auto mb-3" />
               <p className="font-semibold mb-1">WhatsApp</p>
-              <p className="text-white/80 text-sm">[Tu WhatsApp aquí]</p>
-            </div>
+              <p className="text-white/80 text-sm">313 3906650</p>
+            </a>
           </div>
 
           <div className="mt-12 text-white/70 text-sm">

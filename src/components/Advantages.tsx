@@ -26,7 +26,7 @@ const advantages = [
 
 const Advantages = () => {
   return (
-    <section className="py-20 gradient-section">
+    <section id="servicios" className="py-20 gradient-section">
       <div className="container px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">
