@@ -60,7 +60,19 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-white/20 pt-8 text-center text-primary-foreground/70 text-sm">
-            <p>&copy; {currentYear} American Dream Consulting. Todos los derechos reservados.</p>
+            <p className="mb-2">&copy; 2025 American Dream Consulting S.A.S. Todos los derechos reservados.</p>
+            <p className="mb-2">Bogotá D.C, Colombia</p>
+            <p>
+              Desarrollado por{" "}
+              <a 
+                href="https://compercreativo.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors underline"
+              >
+                Comper Creativo
+              </a>
+            </p>
           </div>
         </div>
       </div>
