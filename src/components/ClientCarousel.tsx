@@ -107,11 +107,11 @@ const ClientCarousel = () => {
         }
 
         .marquee-content {
-          animation: scroll-left 40s linear infinite;
+          animation: scroll-left 80s linear infinite;
         }
 
         .marquee-content-reverse {
-          animation: scroll-right 45s linear infinite;
+          animation: scroll-right 90s linear infinite;
         }
 
         .marquee-item {
@@ -143,24 +143,31 @@ const ClientCarousel = () => {
           }
         }
 
-        /* Mobile: continuous animation on both desktop and mobile */
-        @media (max-width: 768px) {
+        /* Mobile/Tablet: manual scroll only */
+        @media (max-width: 1024px) {
           .marquee-row-reverse {
-            display: flex;
+            display: none;
           }
           
-          .marquee-row,
-          .marquee-row-reverse {
-            overflow: hidden;
+          .marquee-row {
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
           }
 
-          .marquee-content,
-          .marquee-content-reverse {
-            animation: scroll-left 40s linear infinite;
+          .marquee-row::-webkit-scrollbar {
+            display: none;
           }
 
-          .marquee-content-reverse {
-            animation: scroll-right 45s linear infinite;
+          .marquee-content {
+            animation: none;
+            padding: 0 1rem;
+          }
+
+          .marquee-item {
+            scroll-snap-align: center;
           }
         }
       `}</style>
