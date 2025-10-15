@@ -11,175 +11,167 @@ import cliente10 from "@/assets/cliente-10.png";
 import cliente11 from "@/assets/cliente-11.png";
 
 const clientImages = [
-  { src: cliente2, alt: "Cliente American Dream Consulting - caso exitoso 1" },
-  { src: cliente3, alt: "Cliente American Dream Consulting - caso exitoso 2" },
-  { src: cliente4, alt: "Cliente American Dream Consulting - caso exitoso 3" },
-  { src: cliente5, alt: "Cliente American Dream Consulting - caso exitoso 4" },
-  { src: cliente6, alt: "Cliente American Dream Consulting - caso exitoso 5" },
-  { src: cliente7, alt: "Cliente American Dream Consulting - caso exitoso 6" },
-  { src: cliente8, alt: "Cliente American Dream Consulting - caso exitoso 7" },
-  { src: cliente9, alt: "Cliente American Dream Consulting - caso exitoso 8" },
-  { src: cliente10, alt: "Cliente American Dream Consulting - caso exitoso 9" },
-  { src: cliente11, alt: "Cliente American Dream Consulting - caso exitoso 10" },
+  { src: cliente2, alt: "Cliente American Dream Consulting - historia de éxito" },
+  { src: cliente3, alt: "Cliente American Dream Consulting - visa aprobada" },
+  { src: cliente4, alt: "Cliente American Dream Consulting - caso exitoso" },
+  { src: cliente5, alt: "Cliente American Dream Consulting - testimonio real" },
+  { src: cliente6, alt: "Cliente American Dream Consulting - éxito garantizado" },
+  { src: cliente7, alt: "Cliente American Dream Consulting - sueño cumplido" },
+  { src: cliente8, alt: "Cliente American Dream Consulting - familia feliz" },
+  { src: cliente9, alt: "Cliente American Dream Consulting - nueva vida" },
+  { src: cliente10, alt: "Cliente American Dream Consulting - aprobación exitosa" },
+  { src: cliente11, alt: "Cliente American Dream Consulting - historia inspiradora" },
 ];
 
 const ClientCarousel = () => {
-  const carouselRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [rotationY, setRotationY] = useState(0);
-  const animationRef = useRef<number>();
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    
     if (prefersReducedMotion) {
       setIsPaused(true);
-      return;
     }
-
-    let currentRotation = rotationY;
-
-    const animate = () => {
-      if (!isPaused && !isDragging) {
-        currentRotation += 0.1;
-        setRotationY(currentRotation);
-      }
-      animationRef.current = requestAnimationFrame(animate);
-    };
-
-    animationRef.current = requestAnimationFrame(animate);
-
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-    };
-  }, [isPaused, isDragging, rotationY]);
-
-  const handleMouseDown = (e: React.MouseEvent) => {
-    setIsDragging(true);
-    setStartX(e.clientX);
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging) return;
-    const delta = e.clientX - startX;
-    setRotationY(rotationY + delta * 0.5);
-    setStartX(e.clientX);
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setIsDragging(true);
-    setStartX(e.touches[0].clientX);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (!isDragging) return;
-    const delta = e.touches[0].clientX - startX;
-    setRotationY(rotationY + delta * 0.5);
-    setStartX(e.touches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    setIsDragging(false);
-  };
+  }, []);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/5 overflow-hidden">
-      <div className="container px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary">
-          Historias de Éxito
+    <section className="py-12 md:py-20 bg-background overflow-hidden">
+      <div className="container px-4 mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-primary">
+          Historias Reales de Éxito
         </h2>
-        <p className="text-center text-xl md:text-2xl mb-12 text-muted-foreground font-medium">
-          Cada historia comienza con un sueño... y una visa aprobada
-        </p>
-
-        <div
-          ref={carouselRef}
-          className="relative h-[420px] md:h-[600px] perspective-1000"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-          style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
-        >
-          <div
-            className="carousel-3d"
-            style={{
-              transform: `rotateY(${rotationY}deg)`,
-              transition: isDragging ? 'none' : 'transform 0.1s linear',
-            }}
-          >
-            {clientImages.map((client, index) => {
-              const angle = (360 / clientImages.length) * index;
-              const radius = 280;
-              
-              return (
-                <div
-                  key={index}
-                  className="carousel-item"
-                  style={{
-                    transform: `rotateY(${angle}deg) translateZ(${radius}px)`,
-                  }}
-                >
-                  <img
-                    src={client.src}
-                    alt={client.alt}
-                    loading="lazy"
-                    className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover border-4 border-accent/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <p className="text-center text-sm text-muted-foreground mt-8">
-          Arrastra para rotar • Pasa el cursor para pausar
+        <p className="text-center text-lg md:text-xl lg:text-2xl text-muted-foreground font-medium max-w-3xl mx-auto">
+          Cada historia comienza con un sueño… y termina con una visa aprobada
         </p>
       </div>
 
+      <div className="relative">
+        {/* Fade masks */}
+        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+
+        {/* First row - scrolls right to left */}
+        <div 
+          className="marquee-row mb-6 md:mb-8"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          onTouchStart={() => setIsPaused(true)}
+          onTouchEnd={() => setIsPaused(false)}
+        >
+          <div className={`marquee-content ${isPaused ? 'paused' : ''}`}>
+            {[...clientImages, ...clientImages].map((client, index) => (
+              <div key={`row1-${index}`} className="marquee-item">
+                <img
+                  src={client.src}
+                  alt={client.alt}
+                  loading="lazy"
+                  className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-3xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Second row - scrolls left to right */}
+        <div 
+          className="marquee-row-reverse"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          onTouchStart={() => setIsPaused(true)}
+          onTouchEnd={() => setIsPaused(false)}
+        >
+          <div className={`marquee-content-reverse ${isPaused ? 'paused' : ''}`}>
+            {[...clientImages, ...clientImages].map((client, index) => (
+              <div key={`row2-${index}`} className="marquee-item">
+                <img
+                  src={client.src}
+                  alt={client.alt}
+                  loading="lazy"
+                  className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-3xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <style>{`
-        .perspective-1000 {
-          perspective: 1000px;
+        .marquee-row,
+        .marquee-row-reverse {
+          display: flex;
+          overflow: hidden;
+          user-select: none;
         }
 
-        .carousel-3d {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          transform-style: preserve-3d;
-          left: 50%;
-          top: 50%;
-          margin-left: -50%;
-          margin-top: -50%;
+        .marquee-content,
+        .marquee-content-reverse {
+          display: flex;
+          gap: 1.5rem;
+          padding: 0 0.75rem;
+          flex-shrink: 0;
         }
 
-        .carousel-item {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform-style: preserve-3d;
-          backface-visibility: visible;
+        .marquee-content {
+          animation: scroll-left 40s linear infinite;
         }
 
-        .carousel-item img {
-          transform: translateX(-50%) translateY(-50%);
+        .marquee-content-reverse {
+          animation: scroll-right 45s linear infinite;
+        }
+
+        .marquee-content.paused,
+        .marquee-content-reverse.paused {
+          animation-play-state: paused;
+        }
+
+        .marquee-item {
+          flex-shrink: 0;
+        }
+
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        @keyframes scroll-right {
+          0% {
+            transform: translateX(-50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .carousel-3d {
+          .marquee-content,
+          .marquee-content-reverse {
             animation: none !important;
+          }
+        }
+
+        /* Mobile: single scrollable row */
+        @media (max-width: 768px) {
+          .marquee-row-reverse {
+            display: none;
+          }
+          
+          .marquee-row {
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+          }
+
+          .marquee-content {
+            animation: none;
+            padding: 0 1rem;
+          }
+
+          .marquee-item {
+            scroll-snap-align: center;
           }
         }
       `}</style>
