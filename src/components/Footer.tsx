@@ -86,9 +86,6 @@ const Footer = () => {
                   <Mail className="w-5 h-5" />
                 </a>
               </div>
-              <p className="text-primary-foreground/80 text-sm">
-                Espacio para agregar tus redes sociales
-              </p>
             </div>
           </div>
 

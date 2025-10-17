@@ -85,10 +85,6 @@ const CallToAction = () => {
               <p className="text-white/80 text-sm">313 3906650</p>
             </a>
           </div>
-
-          <div className="mt-12 text-white/70 text-sm">
-            <p>Espacio para agregar tus datos de contacto o formulario</p>
-          </div>
         </div>
       </div>
     </section>

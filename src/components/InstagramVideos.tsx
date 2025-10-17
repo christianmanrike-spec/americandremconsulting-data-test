@@ -72,15 +72,6 @@ const InstagramVideos = () => {
             </CardContent>
           </Card>
         </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-muted-foreground mb-4">
-            Para agregar videos de Instagram, reemplaza los placeholders con los iframes de Instagram embed
-          </p>
-          <p className="text-sm text-muted-foreground italic">
-            Ejemplo: {"<blockquote class=\"instagram-media\" ...> código del embed de Instagram </blockquote>"}
-          </p>
-        </div>
       </div>
     </section>
   );
