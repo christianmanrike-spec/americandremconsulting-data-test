@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import ClientCarousel from "@/components/ClientCarousel";
 import Advantages from "@/components/Advantages";
 import Testimonials from "@/components/Testimonials";
+import VisaGuideSection from "@/components/VisaGuideSection";
 import InstagramVideos from "@/components/InstagramVideos";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
@@ -13,6 +14,7 @@ const Index = () => {
       <ClientCarousel />
       <Advantages />
       <Testimonials />
+      <VisaGuideSection />
       <InstagramVideos />
       <CallToAction />
       <Footer />
