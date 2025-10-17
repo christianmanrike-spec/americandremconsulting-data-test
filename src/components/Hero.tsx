@@ -53,6 +53,45 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* What's Included Section */}
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 mb-10 max-w-3xl mx-auto shadow-xl animate-fade-in">
+            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+              Tu inversión incluye:
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+              <div className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-primary text-base md:text-lg">
+                  Diligenciamiento completo del formulario DS-160
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-primary text-base md:text-lg">
+                  Mejoramiento y optimización del perfil del solicitante
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-primary text-base md:text-lg">
+                  Asesoría personalizada durante todo el proceso
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-primary text-base md:text-lg">
+                  Simulacros para entrevista consular
+                </p>
+              </div>
+              <div className="flex items-start gap-3 md:col-span-2 md:justify-center">
+                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-primary text-base md:text-lg font-semibold">
+                  Adelantamiento de cita a tan solo 1 mes de espera
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Key Benefits */}
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-10">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
