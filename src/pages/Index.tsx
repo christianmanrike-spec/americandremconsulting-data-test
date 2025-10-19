@@ -5,6 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import VisaGuideSection from "@/components/VisaGuideSection";
 import InstagramVideos from "@/components/InstagramVideos";
 import CallToAction from "@/components/CallToAction";
+import DreamSection from "@/components/DreamSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <VisaGuideSection />
       <InstagramVideos />
       <CallToAction />
+      <DreamSection />
       <Footer />
     </div>
   );
