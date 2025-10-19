@@ -14,11 +14,11 @@ const Index = () => {
       <Hero />
       <ClientCarousel />
       <Advantages />
+      <DreamSection />
       <Testimonials />
       <VisaGuideSection />
       <InstagramVideos />
       <CallToAction />
-      <DreamSection />
       <Footer />
     </div>
   );
