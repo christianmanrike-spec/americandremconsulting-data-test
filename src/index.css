@@ -8,73 +8,91 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Brand Colors - New Identity */
+    --brand-teal: 192 74% 23%;        /* #0F4E64 */
+    --brand-navy: 189 100% 12%;       /* #00313C */
+    --brand-blue: 203 100% 28%;       /* #005690 */
+    --accent-aqua: 188 69% 49%;       /* #2ABBD3 */
+    --accent-pink: 339 61% 57%;       /* #DA4B7E */
+    --accent-red: 346 66% 52%;        /* #D8325D */
+    --bg-light: 199 86% 96%;          /* #EAF6FE */
+    
+    /* Base tokens */
     --background: 0 0% 100%;
-    --foreground: 209 100% 22%;
+    --foreground: 189 100% 12%;       /* brand-navy */
 
     --card: 0 0% 100%;
-    --card-foreground: 209 100% 22%;
+    --card-foreground: 189 100% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 209 100% 22%;
+    --popover-foreground: 189 100% 12%;
 
-    --primary: 209 100% 22%;
+    --primary: 192 74% 23%;           /* brand-teal */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 202 64% 47%;
+    --secondary: 203 100% 28%;        /* brand-blue */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 202 30% 95%;
-    --muted-foreground: 202 30% 40%;
+    --muted: 199 86% 96%;             /* bg-light */
+    --muted-foreground: 189 100% 12%;
 
-    --accent: 358 79% 51%;
+    --accent: 188 69% 49%;            /* accent-aqua */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 202 30% 90%;
-    --input: 202 30% 90%;
-    --ring: 209 100% 22%;
+    --border: 192 74% 23%;            /* brand-teal with opacity */
+    --input: 192 74% 23%;
+    --ring: 188 69% 49%;              /* accent-aqua */
 
     --radius: 0.75rem;
 
-    /* Custom gradient tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(209, 100%, 22%) 0%, hsl(202, 64%, 47%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(198, 100%, 98%) 100%);
+    /* CTA tokens */
+    --cta: 346 66% 52%;               /* accent-red */
+    --cta-hover-start: 339 61% 57%;   /* accent-pink */
+    --cta-hover-end: 346 66% 52%;     /* accent-red */
     
-    /* Shadow tokens */
-    --shadow-card: 0 4px 20px rgba(0, 58, 112, 0.08);
-    --shadow-card-hover: 0 8px 30px rgba(0, 58, 112, 0.12);
+    /* Border and shadow tokens */
+    --border-weak: rgba(15, 78, 100, 0.24);
+    --shadow-brand-1: 0 8px 20px rgba(0, 49, 60, 0.10);
+    --shadow-brand-2: 0 12px 32px rgba(0, 49, 60, 0.16);
+    --glow-aqua: 0 0 32px rgba(42, 187, 211, 0.35), 0 0 64px rgba(42, 187, 211, 0.18);
+
+    /* Gradient tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(192, 74%, 23%) 0%, hsl(189, 100%, 12%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(199, 86%, 96%) 100%);
+    --gradient-cta: linear-gradient(90deg, hsl(339, 61%, 57%), hsl(346, 66%, 52%));
   }
 
   .dark {
-    --background: 201 100% 15%;
+    --background: 189 100% 12%;
     --foreground: 0 0% 100%;
 
-    --card: 209 100% 22%;
+    --card: 192 74% 23%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 209 100% 22%;
+    --popover: 192 74% 23%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 0 0% 100%;
-    --primary-foreground: 209 100% 22%;
+    --primary-foreground: 192 74% 23%;
 
-    --secondary: 202 64% 47%;
+    --secondary: 203 100% 28%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 202 30% 25%;
-    --muted-foreground: 202 30% 70%;
+    --muted: 192 74% 23%;
+    --muted-foreground: 199 86% 96%;
 
-    --accent: 358 79% 51%;
+    --accent: 188 69% 49%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 202 30% 25%;
-    --input: 202 30% 25%;
-    --ring: 198 100% 44%;
+    --border: 192 74% 23%;
+    --input: 192 74% 23%;
+    --ring: 188 69% 49%;
   }
 }
 
@@ -85,11 +103,31 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Titillium Web', system-ui, -apple-system, sans-serif;
+    font-weight: 300;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight;
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    @apply tracking-tight;
+  }
+
+  h3, h4 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    @apply tracking-tight;
+  }
+
+  h5, h6 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    @apply tracking-tight;
   }
 
   .gradient-hero {
@@ -98,5 +136,45 @@ All colors MUST be HSL.
 
   .gradient-section {
     background: var(--gradient-section);
+  }
+
+  .gradient-cta {
+    background: var(--gradient-cta);
+  }
+
+  /* KV Halo Effect */
+  .kv-halo {
+    position: relative;
+  }
+
+  .kv-halo::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    aspect-ratio: 1/1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10%;
+    background: radial-gradient(
+      closest-side,
+      rgba(42, 187, 211, 0.45),
+      rgba(42, 187, 211, 0.08) 60%,
+      transparent 70%
+    );
+    filter: blur(18px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .kv-halo::before {
+      animation: none;
+      filter: none;
+    }
+  }
+
+  /* Glow effect */
+  .glow {
+    box-shadow: var(--shadow-brand-2), 0 0 24px rgba(42, 187, 211, 0.25), 0 0 48px rgba(218, 75, 126, 0.15);
   }
 }

@@ -57,6 +57,33 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        brand: {
+          teal: "hsl(var(--brand-teal))",
+          navy: "hsl(var(--brand-navy))",
+          blue: "hsl(var(--brand-blue))",
+        },
+        accentColors: {
+          aqua: "hsl(var(--accent-aqua))",
+          pink: "hsl(var(--accent-pink))",
+          red: "hsl(var(--accent-red))",
+        },
+        light: "hsl(var(--bg-light))",
+        cta: {
+          DEFAULT: "hsl(var(--cta))",
+          hover: {
+            start: "hsl(var(--cta-hover-start))",
+            end: "hsl(var(--cta-hover-end))",
+          },
+        },
+      },
+      boxShadow: {
+        "brand-1": "var(--shadow-brand-1)",
+        "brand-2": "var(--shadow-brand-2)",
+        "glow-aqua": "var(--glow-aqua)",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        titillium: ["Titillium Web", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

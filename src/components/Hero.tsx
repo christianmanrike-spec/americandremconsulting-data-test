@@ -5,7 +5,7 @@ import logoClaro from "@/assets/logo-claro.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden kv-halo">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -14,6 +14,12 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 gradient-hero opacity-90"></div>
+        <div 
+          className="absolute inset-0" 
+          style={{
+            background: 'linear-gradient(180deg, rgba(0,49,60,0) 0%, rgba(0,49,60,0.35) 60%, rgba(0,49,60,0.55) 100%)'
+          }}
+        ></div>
       </div>
 
       {/* Content */}
@@ -28,64 +34,64 @@ const Hero = () => {
             />
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
             Obtén Tu Visa en Tiempo Récord
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-white/90 font-medium">
+          <p className="text-xl md:text-2xl mb-8 text-white/90 font-titillium font-normal">
             Servicio exclusivo, rápido y a tu medida.
           </p>
 
           {/* Price Card */}
-          <div className="bg-white/95 backdrop-blur-sm text-primary rounded-2xl p-8 mb-10 max-w-2xl mx-auto shadow-2xl">
+          <div className="bg-white/95 backdrop-blur-sm text-primary rounded-2xl p-8 mb-10 max-w-2xl mx-auto shadow-brand-2 glow">
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               <div className="text-center md:text-left">
-                <p className="text-sm text-muted-foreground mb-2">Inversión</p>
-                <p className="text-4xl md:text-5xl font-bold text-primary">$2.500.000</p>
-                <p className="text-xl text-secondary mt-1">COP</p>
+                <p className="text-sm font-titillium text-foreground/70 mb-2">Inversión</p>
+                <p className="text-4xl md:text-5xl font-montserrat font-bold text-primary">$2.500.000</p>
+                <p className="text-xl font-titillium text-secondary mt-1">COP</p>
               </div>
-              <div className="hidden md:block w-px h-16 bg-border"></div>
+              <div className="hidden md:block w-px h-16 bg-[var(--border-weak)]"></div>
               <div className="text-center md:text-left">
-                <p className="text-sm text-muted-foreground mb-2">Equivalente</p>
-                <p className="text-4xl md:text-5xl font-bold text-secondary">~$650</p>
-                <p className="text-xl text-secondary mt-1">USD</p>
+                <p className="text-sm font-titillium text-foreground/70 mb-2">Equivalente</p>
+                <p className="text-4xl md:text-5xl font-montserrat font-bold text-secondary">~$650</p>
+                <p className="text-xl font-titillium text-secondary mt-1">USD</p>
               </div>
             </div>
           </div>
 
           {/* What's Included Section */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 mb-10 max-w-3xl mx-auto shadow-xl animate-fade-in">
-            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+          <div className="bg-light/95 backdrop-blur-sm rounded-2xl p-8 mb-10 max-w-3xl mx-auto shadow-brand-1 border border-[var(--border-weak)] animate-fade-in">
+            <h3 className="text-2xl md:text-3xl font-titillium font-bold italic text-primary mb-6">
               Tu inversión incluye:
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary text-base md:text-lg">
+                <p className="text-primary font-titillium text-base md:text-lg">
                   Diligenciamiento completo del formulario DS-160
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary text-base md:text-lg">
+                <p className="text-primary font-titillium text-base md:text-lg">
                   Mejoramiento y optimización del perfil del solicitante
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary text-base md:text-lg">
+                <p className="text-primary font-titillium text-base md:text-lg">
                   Asesoría personalizada durante todo el proceso
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary text-base md:text-lg">
+                <p className="text-primary font-titillium text-base md:text-lg">
                   Simulacros para entrevista consular
                 </p>
               </div>
               <div className="flex items-start gap-3 md:col-span-2 md:justify-center">
                 <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary text-base md:text-lg font-semibold">
+                <p className="text-primary font-titillium text-base md:text-lg font-semibold">
                   Adelantamiento de cita a tan solo 1 mes de espera
                 </p>
               </div>
@@ -110,7 +116,8 @@ const Hero = () => {
 
           <Button 
             size="lg" 
-            className="bg-accent hover:bg-accent/90 text-white text-lg px-10 py-6 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            variant="cta"
+            className="text-lg px-10 py-6 h-auto"
             asChild
           >
             <a 

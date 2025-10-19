@@ -43,13 +43,13 @@ const VisaGuideSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-light/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
+          <h2 className="text-4xl md:text-5xl mb-4 text-primary">
             Todo lo que debes saber sobre la visa americana
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl font-titillium text-foreground/80 max-w-3xl mx-auto">
             Respondemos las preguntas más frecuentes que las personas buscan en Google sobre el proceso de visa americana en Colombia. Accede a nuestra guía completa y resuelve todas tus dudas.
           </p>
         </div>
@@ -60,19 +60,18 @@ const VisaGuideSection = () => {
             return (
               <Card 
                 key={index} 
-                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4"
-                style={{ borderTopColor: `var(--${guia.color})` }}
+                className="hover:-translate-y-1 border-t-4 border-t-accent"
               >
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className={`p-3 rounded-lg bg-muted ${guia.color}`}>
-                      <Icon className="w-6 h-6" />
+                    <div className="p-3 rounded-lg bg-light">
+                      <Icon className="w-6 h-6 text-accent" />
                     </div>
                   </div>
-                  <CardTitle className="text-xl">{guia.titulo}</CardTitle>
+                  <CardTitle className="text-xl font-titillium">{guia.titulo}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-6 min-h-[60px]">
+                  <p className="font-titillium text-foreground/70 mb-6 min-h-[60px]">
                     {guia.descripcion}
                   </p>
                   <Button variant="outline" asChild className="w-full">
@@ -87,10 +86,10 @@ const VisaGuideSection = () => {
         </div>
 
         <div className="text-center">
-          <p className="text-muted-foreground mb-6 text-lg">
+          <p className="font-titillium text-foreground/80 mb-6 text-lg">
             ¿Necesitas ayuda personalizada para tu proceso de visa?
           </p>
-          <Button size="lg" asChild className="bg-accent hover:bg-accent/90">
+          <Button size="lg" variant="cta" asChild>
             <a
               href="https://wa.me/573133906650?text=Hola,%20necesito%20asesor%C3%ADa%20para%20mi%20visa%20americana"
               target="_blank"
