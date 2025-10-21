@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Mail } from "lucide-react";
-import logoClaro from "@/assets/logo-claro.png";
+import logoClaro from "@/assets/logo-negativo-nuevo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

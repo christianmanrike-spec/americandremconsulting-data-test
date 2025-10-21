@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import logoClaro from "@/assets/logo-claro.png";
+import logoClaro from "@/assets/logo-negativo-nuevo.png";
 
 const Hero = () => {
   return (
