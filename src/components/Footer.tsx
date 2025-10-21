@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src={logoClaro} 
                 alt="American Dream Consulting" 
-                className="h-36 w-auto mb-4"
+                className="h-auto max-h-36 w-auto max-w-full mb-4"
               />
               <p className="text-white/80 font-titillium">
                 Tu camino hacia el sueño americano comienza aquí.

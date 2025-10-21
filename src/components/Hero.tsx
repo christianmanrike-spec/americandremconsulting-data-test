@@ -8,11 +8,11 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden kv-halo">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="American Dream - Visa Consulting" 
-          className="w-full h-full object-cover"
-        />
+            <img 
+              src={heroBg} 
+              alt="American Dream - Visa Consulting" 
+              className="w-full h-full object-cover"
+            />
         <div className="absolute inset-0 gradient-hero opacity-90"></div>
         <div 
           className="absolute inset-0" 
@@ -30,7 +30,7 @@ const Hero = () => {
             <img 
               src={logoClaro} 
               alt="American Dream Consulting" 
-              className="h-48 md:h-60 w-auto"
+              className="h-auto max-h-48 md:max-h-60 w-auto max-w-full"
             />
           </div>
 
