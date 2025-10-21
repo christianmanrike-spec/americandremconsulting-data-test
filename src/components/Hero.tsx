@@ -30,7 +30,7 @@ const Hero = () => {
             <img 
               src={logoClaro} 
               alt="American Dream Consulting" 
-              className="h-auto max-h-48 md:max-h-60 w-auto max-w-full"
+              className="h-auto max-h-24 md:max-h-30 w-auto max-w-full"
             />
           </div>
 
