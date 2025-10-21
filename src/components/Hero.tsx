@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import logoNegativo from "@/assets/logo-negativo.png";
+import logoClaro from "@/assets/logo-claro.png";
 
 const Hero = () => {
   return (
@@ -28,9 +28,9 @@ const Hero = () => {
           {/* Logo */}
           <div className="mb-8 flex justify-center">
             <img 
-              src={logoNegativo} 
+              src={logoClaro} 
               alt="American Dream Consulting" 
-              className="h-36 md:h-48 w-auto"
+              className="h-48 md:h-60 w-auto"
             />
           </div>
 
