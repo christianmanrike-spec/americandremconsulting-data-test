@@ -97,7 +97,7 @@ const CuantoCuestaVisaAmericana = () => {
                   </tr>
                   <tr className="border-b">
                     <td className="p-4 font-semibold">Servicio de asesoría profesional</td>
-                    <td className="p-4">COP 2.500.000 (~USD 650)</td>
+                    <td className="p-4">COP 2.700.000 (~USD 695)</td>
                     <td className="p-4 text-sm text-muted-foreground">Incluye diligenciamiento DS-160, optimización de perfil, simulacros y más</td>
                   </tr>
                   <tr className="border-b bg-muted/30">

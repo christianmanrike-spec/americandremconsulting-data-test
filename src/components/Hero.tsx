@@ -47,13 +47,13 @@ const Hero = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               <div className="text-center md:text-left">
                 <p className="text-sm font-titillium text-foreground/70 mb-2">Inversión</p>
-                <p className="text-4xl md:text-5xl font-montserrat font-bold text-primary">$2.500.000</p>
+                <p className="text-4xl md:text-5xl font-montserrat font-bold text-primary">$2.700.000</p>
                 <p className="text-xl font-titillium text-secondary mt-1">COP</p>
               </div>
               <div className="hidden md:block w-px h-16 bg-[var(--border-weak)]"></div>
               <div className="text-center md:text-left">
                 <p className="text-sm font-titillium text-foreground/70 mb-2">Equivalente</p>
-                <p className="text-4xl md:text-5xl font-montserrat font-bold text-secondary">~$650</p>
+                <p className="text-4xl md:text-5xl font-montserrat font-bold text-secondary">$695</p>
                 <p className="text-xl font-titillium text-secondary mt-1">USD</p>
               </div>
             </div>

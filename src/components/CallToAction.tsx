@@ -17,10 +17,10 @@ const CallToAction = () => {
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 mb-10 inline-block shadow-brand-2">
             <p className="text-white/80 mb-2 font-titillium">Inversión total</p>
             <div className="flex items-baseline gap-3 justify-center">
-              <p className="text-4xl md:text-5xl font-montserrat font-bold">$2.500.000</p>
+              <p className="text-4xl md:text-5xl font-montserrat font-bold">$2.700.000</p>
               <p className="text-xl text-white/80 font-titillium">COP</p>
               <span className="text-white/60">•</span>
-              <p className="text-2xl md:text-3xl font-montserrat font-bold text-white/90">~$650</p>
+              <p className="text-2xl md:text-3xl font-montserrat font-bold text-white/90">$695</p>
               <p className="text-lg text-white/80 font-titillium">USD</p>
             </div>
           </div>
