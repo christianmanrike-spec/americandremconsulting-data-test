@@ -1,7 +1,22 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Instagram } from "lucide-react";
+import { useEffect } from "react";
 
 const InstagramVideos = () => {
+  useEffect(() => {
+    // Load Instagram embed script
+    const script = document.createElement('script');
+    script.src = "//www.instagram.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      const scripts = document.querySelectorAll('script[src="//www.instagram.com/embed.js"]');
+      scripts.forEach(s => s.remove());
+    };
+  }, []);
+
   return (
     <section className="py-20 gradient-section">
       <div className="container px-4">
@@ -18,57 +33,45 @@ const InstagramVideos = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {/* Video Placeholder 1 */}
+          {/* Video 1 */}
           <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
             <CardContent className="p-0">
-              <div className="aspect-[9/16] bg-muted flex items-center justify-center relative group">
-                <div className="text-center p-6">
-                  <Instagram className="w-16 h-16 text-secondary mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">
-                    Espacio para video de Instagram #1
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Inserta el iframe o enlace aquí
-                  </p>
-                </div>
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-300"></div>
-              </div>
+              <iframe
+                src="https://www.instagram.com/reel/DQr_aOdAZ4r/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
             </CardContent>
           </Card>
 
-          {/* Video Placeholder 2 */}
+          {/* Video 2 */}
           <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
             <CardContent className="p-0">
-              <div className="aspect-[9/16] bg-muted flex items-center justify-center relative group">
-                <div className="text-center p-6">
-                  <Instagram className="w-16 h-16 text-secondary mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">
-                    Espacio para video de Instagram #2
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Inserta el iframe o enlace aquí
-                  </p>
-                </div>
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-300"></div>
-              </div>
+              <iframe
+                src="https://www.instagram.com/reel/DQU-QG9gSCr/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
             </CardContent>
           </Card>
 
-          {/* Video Placeholder 3 */}
+          {/* Video 3 */}
           <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
             <CardContent className="p-0">
-              <div className="aspect-[9/16] bg-muted flex items-center justify-center relative group">
-                <div className="text-center p-6">
-                  <Instagram className="w-16 h-16 text-secondary mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">
-                    Espacio para video de Instagram #3
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Inserta el iframe o enlace aquí
-                  </p>
-                </div>
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-300"></div>
-              </div>
+              <iframe
+                src="https://www.instagram.com/reel/DQaQNTDDUI2/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
             </CardContent>
           </Card>
         </div>
