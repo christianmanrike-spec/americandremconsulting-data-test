@@ -68,6 +68,12 @@ const Hero = () => {
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <p className="text-primary font-titillium text-base md:text-lg">
+                  Pago de derechos consulares
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-primary font-titillium text-base md:text-lg">
                   Diligenciamiento completo del formulario DS-160
                 </p>
               </div>
