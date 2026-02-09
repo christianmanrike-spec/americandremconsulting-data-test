@@ -9,6 +9,9 @@ import cliente7 from "@/assets/cliente-7.jpg";
 import cliente8 from "@/assets/cliente-8.jpg";
 import cliente9 from "@/assets/cliente-9.jpg";
 import cliente10 from "@/assets/cliente-10.jpg";
+import cliente11 from "@/assets/cliente-11.jpg";
+import cliente12 from "@/assets/cliente-12.jpg";
+import cliente13 from "@/assets/cliente-13.jpg";
 
 const clientImages = [
   { src: cliente1, alt: "Cliente American Dream Consulting - visa aprobada" },
@@ -21,6 +24,9 @@ const clientImages = [
   { src: cliente8, alt: "Cliente American Dream Consulting - familia reunida" },
   { src: cliente9, alt: "Cliente American Dream Consulting - amigos con visa" },
   { src: cliente10, alt: "Cliente American Dream Consulting - familia completa" },
+  { src: cliente11, alt: "Cliente American Dream Consulting - familia con pasaportes" },
+  { src: cliente12, alt: "Cliente American Dream Consulting - grupo con pasaportes" },
+  { src: cliente13, alt: "Cliente American Dream Consulting - cliente feliz con visa" },
 ];
 
 // Componente de imagen optimizada con carga diferida
