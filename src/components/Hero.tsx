@@ -74,7 +74,19 @@ const Hero = () => {
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <p className="text-primary font-titillium text-base md:text-lg">
-                  Mejoramiento y optimización del perfil del solicitante
+                  Diagnóstico estratégico
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-primary font-titillium text-base md:text-lg">
+                  Preparación psicológica para entrevista
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-primary font-titillium text-base md:text-lg">
+                  Optimización de perfil financiero
                 </p>
               </div>
               <div className="flex items-start gap-3">
