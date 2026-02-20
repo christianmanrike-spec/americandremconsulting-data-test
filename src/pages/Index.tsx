@@ -4,6 +4,7 @@ import Advantages from "@/components/Advantages";
 import Testimonials from "@/components/Testimonials";
 import VisaGuideSection from "@/components/VisaGuideSection";
 import InstagramVideos from "@/components/InstagramVideos";
+import SocialMediaSection from "@/components/SocialMediaSection";
 import CallToAction from "@/components/CallToAction";
 import DreamSection from "@/components/DreamSection";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ const Index = () => {
       <Testimonials />
       <VisaGuideSection />
       <InstagramVideos />
+      <SocialMediaSection />
       <CallToAction />
       <Footer />
     </div>
