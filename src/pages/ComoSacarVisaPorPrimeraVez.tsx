@@ -3,8 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { useSeo } from "@/hooks/use-seo";
 
 const ComoSacarVisaPorPrimeraVez = () => {
+  useSeo({
+    title: "¿Cómo sacar la visa americana por primera vez? | American Dream Consulting",
+    description: "Guía paso a paso del proceso completo para obtener tu visa americana por primera vez en Colombia.",
+    ogImage: "https://americandremconsulting-data-test.lovable.app/og-visa-primera-vez.jpg",
+  });
   const pasos = [
     {
       numero: "1",

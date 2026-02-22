@@ -3,8 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, DollarSign, AlertCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { useSeo } from "@/hooks/use-seo";
 
 const CuantoCuestaVisaAmericana = () => {
+  useSeo({
+    title: "¿Cuánto cuesta la visa americana en Colombia? | American Dream Consulting",
+    description: "Conoce todos los costos oficiales, tarifas actuales y próximos aumentos previstos para 2025.",
+    ogImage: "https://americandremconsulting-data-test.lovable.app/og-costo-visa.jpg",
+  });
   const whatsappNumber = "573133906650";
   const whatsappMessage = "Hola, quiero información sobre los costos de la visa americana";
 
