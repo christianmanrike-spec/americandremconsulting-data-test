@@ -105,7 +105,7 @@ const VisaGuideSection = () => {
           </p>
           <Button size="lg" variant="cta" asChild>
             <a
-              href="https://wa.me/573133906650?text=Hola,%20necesito%20asesor%C3%ADa%20para%20mi%20visa%20americana"
+              href="https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa"
               target="_blank"
               rel="noopener noreferrer"
             >

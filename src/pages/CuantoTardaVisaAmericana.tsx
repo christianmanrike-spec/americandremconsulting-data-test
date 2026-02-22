@@ -11,8 +11,7 @@ const CuantoTardaVisaAmericana = () => {
     description: "Tiempos de espera actuales, factores que afectan la duración y consejos para agilizar tu trámite.",
     ogImage: "https://americandremconsulting-data-test.lovable.app/og-tiempo-visa.jpg",
   });
-  const whatsappNumber = "573133906650";
-  const whatsappMessage = "Hola, quiero información sobre los tiempos para obtener mi visa americana";
+  const whatsappLink = "https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa";
 
   return (
     <div className="min-h-screen bg-background">
@@ -218,7 +217,7 @@ const CuantoTardaVisaAmericana = () => {
               className="bg-white text-accent hover:bg-white/90 font-semibold text-lg px-8"
             >
               <a
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+                href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >

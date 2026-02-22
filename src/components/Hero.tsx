@@ -139,7 +139,7 @@ const Hero = () => {
             asChild
           >
             <a 
-              href="https://api.whatsapp.com/send/?phone=573133906650&text&type=phone_number&app_absent=0"
+              href="https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa"
               target="_blank"
               rel="noopener noreferrer"
             >

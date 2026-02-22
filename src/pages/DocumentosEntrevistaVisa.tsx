@@ -11,8 +11,7 @@ const DocumentosEntrevistaVisa = () => {
     description: "Lista completa de documentos esenciales y adicionales para tu entrevista consular en Colombia.",
     ogImage: "https://americandremconsulting-data-test.lovable.app/og-documentos-visa.jpg",
   });
-  const whatsappNumber = "573133906650";
-  const whatsappMessage = "Hola, necesito ayuda para preparar los documentos de mi entrevista de visa";
+  const whatsappLink = "https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa";
 
   const documentosEsenciales = [
     {
@@ -256,7 +255,7 @@ const DocumentosEntrevistaVisa = () => {
               className="bg-white text-accent hover:bg-white/90 font-semibold text-lg px-8"
             >
               <a
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+                href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
