@@ -3,8 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, Calendar, AlertCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { useSeo } from "@/hooks/use-seo";
 
 const CuantoTardaVisaAmericana = () => {
+  useSeo({
+    title: "¿Cuánto tarda sacar la visa americana en Colombia? | American Dream Consulting",
+    description: "Tiempos de espera actuales, factores que afectan la duración y consejos para agilizar tu trámite.",
+    ogImage: "https://americandremconsulting-data-test.lovable.app/og-tiempo-visa.jpg",
+  });
   const whatsappNumber = "573133906650";
   const whatsappMessage = "Hola, quiero información sobre los tiempos para obtener mi visa americana";
 

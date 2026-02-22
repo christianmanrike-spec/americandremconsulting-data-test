@@ -3,8 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Calendar, TrendingUp, AlertCircle, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { useSeo } from "@/hooks/use-seo";
 
 const CitaVisaAmericana2025 = () => {
+  useSeo({
+    title: "Citas para visa americana 2025 en Colombia | American Dream Consulting",
+    description: "Situación actualizada de disponibilidad de citas y estrategias para adelantar tu entrevista consular.",
+    ogImage: "https://americandremconsulting-data-test.lovable.app/og-cita-visa.jpg",
+  });
   const whatsappNumber = "573133906650";
   const whatsappMessage = "Hola, necesito ayuda para obtener una cita para visa americana en 2025";
 

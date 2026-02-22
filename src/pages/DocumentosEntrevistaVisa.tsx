@@ -3,8 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, FileText, CheckCircle, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { useSeo } from "@/hooks/use-seo";
 
 const DocumentosEntrevistaVisa = () => {
+  useSeo({
+    title: "Documentos para entrevista de visa americana | American Dream Consulting",
+    description: "Lista completa de documentos esenciales y adicionales para tu entrevista consular en Colombia.",
+    ogImage: "https://americandremconsulting-data-test.lovable.app/og-documentos-visa.jpg",
+  });
   const whatsappNumber = "573133906650";
   const whatsappMessage = "Hola, necesito ayuda para preparar los documentos de mi entrevista de visa";
 
