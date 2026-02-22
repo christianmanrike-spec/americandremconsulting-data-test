@@ -24,7 +24,7 @@ const socials = [
   {
     name: "Facebook",
     icon: <Facebook className="w-8 h-8" />,
-    url: "https://www.facebook.com/profile.php?id=61582377153381",
+    url: "https://www.facebook.com/american.dream.consulting/",
     handle: "American Dream Consulting",
     color: "from-[#1877f2] to-[#0a5dc2]",
   },
