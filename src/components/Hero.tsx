@@ -35,7 +35,10 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-            Obtén Tu Visa en Tiempo Récord
+            Obtén Tu Visa en Tiempo Récord{" "}
+            <span className="text-accent font-extrabold drop-shadow-[0_0_20px_rgba(42,187,211,0.6)]">
+              ¡Menos de un mes!
+            </span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 font-titillium font-normal">
