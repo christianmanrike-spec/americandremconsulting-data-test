@@ -23,7 +23,7 @@ const DreamSection = () => {
   ];
 
   return (
-    <section className="relative py-20 overflow-hidden gradient-hero">
+    <section className="relative pt-8 pb-20 overflow-hidden gradient-hero -mt-[1px]">
       {/* Portal/Halo central de fondo */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div 
