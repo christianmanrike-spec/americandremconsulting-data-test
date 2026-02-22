@@ -32,7 +32,7 @@ const InstagramVideos = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* Video 1 */}
           <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
             <CardContent className="p-0">
@@ -66,6 +66,20 @@ const InstagramVideos = () => {
             <CardContent className="p-0">
               <iframe
                 src="https://www.instagram.com/reel/DQaQNTDDUI2/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
+            </CardContent>
+          </Card>
+
+          {/* Video 4 */}
+          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
+            <CardContent className="p-0">
+              <iframe
+                src="https://www.instagram.com/reel/DTtoPOqDNCq/embed"
                 className="w-full aspect-[9/16]"
                 frameBorder="0"
                 scrolling="no"
