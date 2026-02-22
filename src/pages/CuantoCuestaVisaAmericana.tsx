@@ -11,8 +11,7 @@ const CuantoCuestaVisaAmericana = () => {
     description: "Conoce todos los costos oficiales, tarifas actuales y próximos aumentos previstos para 2025.",
     ogImage: "https://americandremconsulting-data-test.lovable.app/og-costo-visa.jpg",
   });
-  const whatsappNumber = "573133906650";
-  const whatsappMessage = "Hola, quiero información sobre los costos de la visa americana";
+  const whatsappLink = "https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa";
 
   return (
     <div className="min-h-screen bg-background">
@@ -160,7 +159,7 @@ const CuantoCuestaVisaAmericana = () => {
               className="bg-white text-accent hover:bg-white/90 font-semibold text-lg px-8"
             >
               <a
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+                href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -11,8 +11,7 @@ const CitaVisaAmericana2025 = () => {
     description: "Situación actualizada de disponibilidad de citas y estrategias para adelantar tu entrevista consular.",
     ogImage: "https://americandremconsulting-data-test.lovable.app/og-cita-visa.jpg",
   });
-  const whatsappNumber = "573133906650";
-  const whatsappMessage = "Hola, necesito ayuda para obtener una cita para visa americana en 2025";
+  const whatsappLink = "https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa";
 
   return (
     <div className="min-h-screen bg-background">
@@ -216,7 +215,7 @@ const CitaVisaAmericana2025 = () => {
               className="bg-white text-accent hover:bg-white/90 font-semibold text-lg px-8"
             >
               <a
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+                href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
