@@ -65,22 +65,21 @@ const OptimizedImage = ({ src, alt, index }: { src: string; alt: string; index: 
     <div className="marquee-item">
       <div
         ref={imgRef}
-        className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl shadow-lg overflow-hidden bg-muted/20"
+        className="w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-2xl shadow-lg overflow-hidden bg-muted/20"
       >
         {isLoaded ? (
           <img
             src={src}
             alt={alt}
-            width="384"
-            height="384"
+            width="256"
+            height="256"
+            loading="lazy"
             decoding="async"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             style={{ contentVisibility: 'auto' }}
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <div className="w-12 h-12 border-4 border-primary/20 border-t-primary rounded-full animate-spin" />
-          </div>
+          <div className="w-full h-full bg-muted/30" />
         )}
       </div>
     </div>
