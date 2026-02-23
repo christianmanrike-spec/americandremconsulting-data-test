@@ -20,7 +20,7 @@ const VisaGuideSection = () => {
     {
       icon: DollarSign,
       titulo: "¿Cuánto cuesta la visa americana?",
-      descripcion: "Conoce todos los costos oficiales, tarifas actuales y próximos aumentos previstos para 2025.",
+      descripcion: "Conoce todos los costos oficiales, tarifas actuales y próximos aumentos previstos para 2026.",
       link: "/cuanto-cuesta-visa-americana-colombia",
       image: ogCostoVisa,
     },
@@ -33,9 +33,9 @@ const VisaGuideSection = () => {
     },
     {
       icon: Calendar,
-      titulo: "Citas para visa en 2025",
+      titulo: "Citas para visa en 2026",
       descripcion: "Situación actualizada de disponibilidad de citas y estrategias para adelantar tu entrevista.",
-      link: "/cita-visa-americana-2025-colombia",
+      link: "/cita-visa-americana-2026-colombia",
       image: ogCitaVisa,
     },
     {
