@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { useSeo } from "@/hooks/use-seo";
 
-const CitaVisaAmericana2025 = () => {
+const CitaVisaAmericana2026 = () => {
   useSeo({
-    title: "Citas para visa americana 2025 en Colombia | American Dream Consulting",
+    title: "Citas para visa americana 2026 en Colombia | American Dream Consulting",
     description: "Situación actualizada de disponibilidad de citas y estrategias para adelantar tu entrevista consular.",
     ogImage: "https://americandremconsulting-data-test.lovable.app/og-cita-visa.jpg",
   });
@@ -23,10 +23,10 @@ const CitaVisaAmericana2025 = () => {
             Volver al inicio
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            ¿Cuánto se está demorando la cita para la visa americana en 2025?
+            ¿Cuánto se está demorando la cita para la visa americana en 2026?
           </h1>
           <p className="text-xl text-white/90 max-w-3xl">
-            En 2025, los tiempos para conseguir una cita de entrevista para visas estadounidenses en Colombia han sido especialmente extensos, lo que exige planificación anticipada. Aquí verás los datos más recientes y algunas estrategias para adelantarte.
+            En 2026, los tiempos para conseguir una cita de entrevista para visas estadounidenses en Colombia han sido especialmente extensos, lo que exige planificación anticipada. Aquí verás los datos más recientes y algunas estrategias para adelantarte.
           </p>
         </div>
       </section>
@@ -34,9 +34,9 @@ const CitaVisaAmericana2025 = () => {
       {/* Contenido Principal */}
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-5xl">
-          {/* Situación Actual 2025 */}
+           {/* Situación Actual 2026 */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-primary">Situación actual de citas en 2025</h2>
+            <h2 className="text-3xl font-bold mb-6 text-primary">Situación actual de citas en 2026</h2>
             
             <Card className="mb-8 border-l-4 border-l-accent">
               <CardHeader>
@@ -89,7 +89,7 @@ const CitaVisaAmericana2025 = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <TrendingUp className="w-6 h-6 text-accent" />
-                  Tendencia 2024-2025
+                  Tendencia 2025-2026
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -242,9 +242,9 @@ const CitaVisaAmericana2025 = () => {
                 <CardTitle className="text-lg">Costos actualizados</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">Información sobre tarifas y costos para 2025</p>
+                <p className="text-muted-foreground mb-4">Información sobre tarifas y costos para 2026</p>
                 <Button variant="outline" asChild className="w-full">
-                  <Link to="/cuanto-cuesta-visa-americana-colombia">Ver costos 2025</Link>
+                  <Link to="/cuanto-cuesta-visa-americana-colombia">Ver costos 2026</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -257,4 +257,4 @@ const CitaVisaAmericana2025 = () => {
   );
 };
 
-export default CitaVisaAmericana2025;
+export default CitaVisaAmericana2026;

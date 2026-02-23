@@ -279,12 +279,12 @@ const DocumentosEntrevistaVisa = () => {
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-lg">Tiempos de espera 2025</CardTitle>
+                <CardTitle className="text-lg">Tiempos de espera 2026</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Información actualizada sobre citas y tiempos</p>
                 <Button variant="outline" asChild className="w-full">
-                  <Link to="/cita-visa-americana-2025-colombia">Ver tiempos actuales</Link>
+                  <Link to="/cita-visa-americana-2026-colombia">Ver tiempos actuales</Link>
                 </Button>
               </CardContent>
             </Card>

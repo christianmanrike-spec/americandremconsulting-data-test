@@ -8,7 +8,7 @@ import NotFound from "./pages/NotFound";
 import ComoSacarVisaPorPrimeraVez from "./pages/ComoSacarVisaPorPrimeraVez";
 import CuantoCuestaVisaAmericana from "./pages/CuantoCuestaVisaAmericana";
 import CuantoTardaVisaAmericana from "./pages/CuantoTardaVisaAmericana";
-import CitaVisaAmericana2025 from "./pages/CitaVisaAmericana2025";
+import CitaVisaAmericana2026 from "./pages/CitaVisaAmericana2026";
 import DocumentosEntrevistaVisa from "./pages/DocumentosEntrevistaVisa";
 
 const queryClient = new QueryClient();
@@ -24,7 +24,7 @@ const App = () => (
           <Route path="/como-sacar-visa-americana-por-primera-vez-colombia" element={<ComoSacarVisaPorPrimeraVez />} />
           <Route path="/cuanto-cuesta-visa-americana-colombia" element={<CuantoCuestaVisaAmericana />} />
           <Route path="/cuanto-tarda-sacar-visa-americana-colombia" element={<CuantoTardaVisaAmericana />} />
-          <Route path="/cita-visa-americana-2025-colombia" element={<CitaVisaAmericana2025 />} />
+          <Route path="/cita-visa-americana-2026-colombia" element={<CitaVisaAmericana2026 />} />
           <Route path="/documentos-entrevista-visa-americana-colombia" element={<DocumentosEntrevistaVisa />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -8,7 +8,7 @@ import { useSeo } from "@/hooks/use-seo";
 const CuantoCuestaVisaAmericana = () => {
   useSeo({
     title: "¿Cuánto cuesta la visa americana en Colombia? | American Dream Consulting",
-    description: "Conoce todos los costos oficiales, tarifas actuales y próximos aumentos previstos para 2025.",
+    description: "Conoce todos los costos oficiales, tarifas actuales y próximos aumentos previstos para 2026.",
     ogImage: "https://americandremconsulting-data-test.lovable.app/og-costo-visa.jpg",
   });
   const whatsappLink = "https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa";
@@ -62,12 +62,12 @@ const CuantoCuestaVisaAmericana = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-yellow-800">
                   <AlertCircle className="w-6 h-6" />
-                  Cambios previstos para 2025
+                  Cambios previstos para 2026
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-yellow-900 mb-4">
-                  Se ha informado un posible aumento: <strong>desde el 1 de octubre de 2025 la tarifa de USD 185 podría subir a USD 435</strong> para visas B1/B2, un incremento del ~135%.
+                  Se ha informado un posible aumento: <strong>desde el 1 de octubre de 2026 la tarifa de USD 185 podría subir a USD 435</strong> para visas B1/B2, un incremento del ~135%.
                 </p>
                 <p className="text-sm text-yellow-800">
                   Verifica siempre el sitio oficial Travel.State y de la Embajada antes de hacer el pago (puede variar).
@@ -140,7 +140,7 @@ const CuantoCuestaVisaAmericana = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                El costo oficial principal que debe pagar todo solicitante es la tarifa MRV (USD 185, posiblemente USD 435 desde octubre 2025). Sin embargo, al contratar un servicio asesor especializado, se suman costos justificados por el valor agregado: evitar errores costosos, optimizar tu perfil, preparación completa para la entrevista y seguimiento personalizado durante todo el proceso.
+                El costo oficial principal que debe pagar todo solicitante es la tarifa MRV (USD 185, posiblemente USD 435 desde octubre 2026). Sin embargo, al contratar un servicio asesor especializado, se suman costos justificados por el valor agregado: evitar errores costosos, optimizar tu perfil, preparación completa para la entrevista y seguimiento personalizado durante todo el proceso.
               </p>
             </CardContent>
           </Card>

@@ -230,12 +230,12 @@ const CuantoTardaVisaAmericana = () => {
           <div className="mt-16 grid md:grid-cols-2 gap-6">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-lg">Citas para visa 2025</CardTitle>
+                <CardTitle className="text-lg">Citas para visa 2026</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Información actualizada sobre tiempos de cita este año</p>
                 <Button variant="outline" asChild className="w-full">
-                  <Link to="/cita-visa-americana-2025-colombia">Ver actualización 2025</Link>
+                  <Link to="/cita-visa-americana-2026-colombia">Ver actualización 2026</Link>
                 </Button>
               </CardContent>
             </Card>
