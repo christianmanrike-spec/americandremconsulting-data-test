@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import cliente1 from "@/assets/cliente-1.jpg";
 import cliente2 from "@/assets/cliente-2.jpg";
 import cliente3 from "@/assets/cliente-3.jpg";
@@ -29,62 +28,21 @@ const clientImages = [
   { src: cliente13, alt: "Cliente American Dream Consulting - cliente feliz con visa" },
 ];
 
-// Componente de imagen optimizada con carga diferida
-const OptimizedImage = ({ src, alt, index }: { src: string; alt: string; index: number }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const imgRef = useRef<HTMLImageElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !isLoaded) {
-            setIsLoaded(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        rootMargin: "200px", // Cargar cuando esté a 200px del viewport
-        threshold: 0.01,
-      }
-    );
-
-    if (imgRef.current) {
-      observer.observe(imgRef.current);
-    }
-
-    return () => {
-      if (imgRef.current) {
-        observer.unobserve(imgRef.current);
-      }
-    };
-  }, [isLoaded]);
-
-  return (
-    <div className="marquee-item">
-      <div
-        ref={imgRef}
-        className="w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-2xl shadow-lg overflow-hidden bg-muted/20"
-      >
-        {isLoaded ? (
-          <img
-            src={src}
-            alt={alt}
-            width="256"
-            height="256"
-            loading="lazy"
-            decoding="async"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-            style={{ contentVisibility: 'auto' }}
-          />
-        ) : (
-          <div className="w-full h-full bg-muted/30" />
-        )}
-      </div>
+const CarouselImage = ({ src, alt }: { src: string; alt: string }) => (
+  <div className="marquee-item">
+    <div className="w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-2xl shadow-lg overflow-hidden bg-muted/20">
+      <img
+        src={src}
+        alt={alt}
+        width="256"
+        height="256"
+        loading="lazy"
+        decoding="async"
+        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+      />
     </div>
-  );
-};
+  </div>
+);
 
 const ClientCarousel = () => {
   return (
@@ -107,11 +65,10 @@ const ClientCarousel = () => {
         <div className="marquee-row mb-6 md:mb-8">
           <div className="marquee-content">
             {[...clientImages, ...clientImages].map((client, index) => (
-              <OptimizedImage
+              <CarouselImage
                 key={`row1-${index}`}
                 src={client.src}
                 alt={client.alt}
-                index={index}
               />
             ))}
           </div>
@@ -121,11 +78,10 @@ const ClientCarousel = () => {
         <div className="marquee-row-reverse">
           <div className="marquee-content-reverse">
             {[...clientImages, ...clientImages].map((client, index) => (
-              <OptimizedImage
+              <CarouselImage
                 key={`row2-${index}`}
                 src={client.src}
                 alt={client.alt}
-                index={index}
               />
             ))}
           </div>
