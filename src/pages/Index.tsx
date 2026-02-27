@@ -17,8 +17,8 @@ const Index = () => {
       <ClientCarousel />
       <Advantages />
       <Testimonials />
-      <VisaGuideSection />
       <InstagramVideos />
+      <VisaGuideSection />
       <SocialMediaSection />
       <CallToAction />
       <Footer />
