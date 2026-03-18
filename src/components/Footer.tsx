@@ -104,7 +104,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-white/20 pt-8 text-center text-white/70 text-sm font-titillium">
-            <p className="mb-2">&copy; 2025 American Dream Consulting S.A.S. Todos los derechos reservados.</p>
+            <p className="mb-2"><p className="mb-2">&copy; 2026 American Dream Consulting S.A.S. Todos los derechos reservados.</p> S.A.S. Todos los derechos reservados.</p>
             <p className="mb-2">Bogotá D.C, Colombia</p>
             <p>
               Desarrollado por{" "}
