@@ -32,12 +32,91 @@ const InstagramVideos = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {/* Video 1 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {/* Video 1 - Nuevo */}
+          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
+            <CardContent className="p-0">
+              <iframe
+                src="https://www.instagram.com/reel/DWzm0udj-bl/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
+            </CardContent>
+          </Card>
+
+          {/* Video 2 - Nuevo */}
+          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
+            <CardContent className="p-0">
+              <iframe
+                src="https://www.instagram.com/reel/DQP-9dijYoR/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
+            </CardContent>
+          </Card>
+
+          {/* Video 3 */}
           <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
             <CardContent className="p-0">
               <iframe
                 src="https://www.instagram.com/reel/DQr_aOdAZ4r/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
+            </CardContent>
+          </Card>
+
+          {/* Video 4 */}
+          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
+            <CardContent className="p-0">
+              <iframe
+                src="https://www.instagram.com/reel/DQU-QG9gSCr/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
+            </CardContent>
+          </Card>
+
+          {/* Video 5 */}
+          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
+            <CardContent className="p-0">
+              <iframe
+                src="https://www.instagram.com/reel/DQaQNTDDUI2/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
+            </CardContent>
+          </Card>
+
+          {/* Video 6 */}
+          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
+            <CardContent className="p-0">
+              <iframe
+                src="https://www.instagram.com/reel/DTtoPOqDNCq/embed"
+                className="w-full aspect-[9/16]"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                loading="lazy"
+              />
+            </CardContent>
+          </Card>
+        </div>
                 className="w-full aspect-[9/16]"
                 frameBorder="0"
                 scrolling="no"
