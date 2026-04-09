@@ -2,16 +2,23 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Instagram } from "lucide-react";
 import { useEffect } from "react";
 
+const reels = [
+  "DWzm0udj-bl",
+  "DQP-9dijYoR",
+  "DQr_aOdAZ4r",
+  "DQU-QG9gSCr",
+  "DQaQNTDDUI2",
+  "DTtoPOqDNCq",
+];
+
 const InstagramVideos = () => {
   useEffect(() => {
-    // Load Instagram embed script
     const script = document.createElement('script');
     script.src = "//www.instagram.com/embed.js";
     script.async = true;
     document.body.appendChild(script);
 
     return () => {
-      // Cleanup script on unmount
       const scripts = document.querySelectorAll('script[src="//www.instagram.com/embed.js"]');
       scripts.forEach(s => s.remove());
     };
@@ -32,62 +39,21 @@ const InstagramVideos = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {/* Video 1 */}
-          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
-            <CardContent className="p-0">
-              <iframe
-                src="https://www.instagram.com/reel/DQr_aOdAZ4r/embed"
-                className="w-full aspect-[9/16]"
-                frameBorder="0"
-                scrolling="no"
-                allowTransparency={true}
-                loading="lazy"
-              />
-            </CardContent>
-          </Card>
-
-          {/* Video 2 */}
-          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
-            <CardContent className="p-0">
-              <iframe
-                src="https://www.instagram.com/reel/DQU-QG9gSCr/embed"
-                className="w-full aspect-[9/16]"
-                frameBorder="0"
-                scrolling="no"
-                allowTransparency={true}
-                loading="lazy"
-              />
-            </CardContent>
-          </Card>
-
-          {/* Video 3 */}
-          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
-            <CardContent className="p-0">
-              <iframe
-                src="https://www.instagram.com/reel/DQaQNTDDUI2/embed"
-                className="w-full aspect-[9/16]"
-                frameBorder="0"
-                scrolling="no"
-                allowTransparency={true}
-                loading="lazy"
-              />
-            </CardContent>
-          </Card>
-
-          {/* Video 4 */}
-          <Card className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
-            <CardContent className="p-0">
-              <iframe
-                src="https://www.instagram.com/reel/DTtoPOqDNCq/embed"
-                className="w-full aspect-[9/16]"
-                frameBorder="0"
-                scrolling="no"
-                allowTransparency={true}
-                loading="lazy"
-              />
-            </CardContent>
-          </Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {reels.map((id) => (
+            <Card key={id} className="border-border overflow-hidden bg-card" style={{ boxShadow: 'var(--shadow-card)' }}>
+              <CardContent className="p-0">
+                <iframe
+                  src={`https://www.instagram.com/reel/${id}/embed`}
+                  className="w-full aspect-[9/16]"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency={true}
+                  loading="lazy"
+                />
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
