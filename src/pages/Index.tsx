@@ -22,7 +22,6 @@ const Index = () => {
       <InstagramVideos />
       <VisaGuideSection />
       <SocialMediaSection />
-      <AppointmentCTA />
       <CallToAction />
       <Footer />
     </div>
