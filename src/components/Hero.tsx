@@ -63,58 +63,57 @@ const Hero = () => {
           </div>
 
           {/* What's Included Section */}
-          <div className="bg-light/95 backdrop-blur-sm rounded-2xl p-8 mb-10 max-w-3xl mx-auto shadow-brand-1 border border-[var(--border-weak)] animate-fade-in">
-            <h3 className="text-2xl md:text-3xl font-titillium font-bold italic text-primary mb-6">
-              Tu inversión incluye:
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-              <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary font-titillium text-base md:text-lg">
-                  Pago de derechos consulares
-                </p>
+          <div className="relative rounded-3xl p-1 mb-10 max-w-3xl mx-auto animate-fade-in" style={{ background: 'linear-gradient(135deg, hsl(188 69% 49%), hsl(203 100% 28%), hsl(192 74% 23%))' }}>
+            <div className="bg-white rounded-[calc(1.5rem-2px)] p-8 md:p-10">
+              <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent to-accent/40"></div>
+                <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-primary whitespace-nowrap">
+                  ✨ Tu inversión incluye
+                </h3>
+                <div className="h-px flex-1 bg-gradient-to-l from-transparent to-accent/40"></div>
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary font-titillium text-base md:text-lg">
-                  Diligenciamiento completo del formulario DS-160
-                </p>
+
+              {/* Highlighted item - Pago de derechos consulares */}
+              <div className="mb-6 rounded-xl p-4 md:p-5 border-2 border-accent/30 shadow-md" style={{ background: 'linear-gradient(135deg, hsl(188 69% 49% / 0.08), hsl(199 86% 96%))' }}>
+                <div className="flex items-center gap-3">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
+                    <Check className="w-6 h-6 text-accent" strokeWidth={3} />
+                  </div>
+                  <div>
+                    <p className="text-primary font-montserrat text-lg md:text-xl font-bold">
+                      Pago de derechos consulares
+                    </p>
+                    <p className="text-primary/60 font-titillium text-sm mt-0.5">Incluido en tu inversión — no pagas nada adicional</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary font-titillium text-base md:text-lg">
-                  Diagnóstico estratégico
-                </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-left">
+                {[
+                  { text: "Diligenciamiento completo del formulario DS-160", icon: "📋" },
+                  { text: "Diagnóstico estratégico", icon: "🎯" },
+                  { text: "Preparación psicológica para entrevista", icon: "🧠" },
+                  { text: "Optimización de perfil financiero", icon: "💼" },
+                  { text: "Asesoría personalizada durante todo el proceso", icon: "🤝" },
+                  { text: "Simulacros para entrevista consular", icon: "🎤" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-muted/60 transition-colors duration-200 group">
+                    <span className="text-xl flex-shrink-0 group-hover:scale-110 transition-transform">{item.icon}</span>
+                    <p className="text-primary font-titillium text-base md:text-lg">
+                      {item.text}
+                    </p>
+                  </div>
+                ))}
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary font-titillium text-base md:text-lg">
-                  Preparación psicológica para entrevista
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary font-titillium text-base md:text-lg">
-                  Optimización de perfil financiero
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary font-titillium text-base md:text-lg">
-                  Asesoría personalizada durante todo el proceso
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary font-titillium text-base md:text-lg">
-                  Simulacros para entrevista consular
-                </p>
-              </div>
-              <div className="flex items-start gap-3 md:col-span-2 md:justify-center">
-                <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-primary font-titillium text-base md:text-lg font-semibold">
-                  Adelantamiento de cita a tan solo 1 mes de espera
-                </p>
+
+              {/* Highlighted bottom item */}
+              <div className="mt-5 rounded-xl p-4 md:p-5 text-center border-2 border-accent/30 shadow-md" style={{ background: 'linear-gradient(135deg, hsl(188 69% 49% / 0.08), hsl(199 86% 96%))' }}>
+                <div className="flex items-center justify-center gap-3">
+                  <span className="text-2xl">🚀</span>
+                  <p className="text-primary font-montserrat text-lg md:text-xl font-bold">
+                    Adelantamiento de cita a tan solo 1 mes de espera
+                  </p>
+                </div>
               </div>
             </div>
           </div>
