@@ -14,6 +14,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Hero />
+      <AppointmentCTA />
       <DreamSection />
       <ClientCarousel />
       <Advantages />
@@ -21,7 +22,6 @@ const Index = () => {
       <InstagramVideos />
       <VisaGuideSection />
       <SocialMediaSection />
-      <AppointmentCTA />
       <CallToAction />
       <Footer />
     </div>
