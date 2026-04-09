@@ -27,9 +27,9 @@ const App = () => (
           <Route path="/cuanto-tarda-sacar-visa-americana-colombia" element={<CuantoTardaVisaAmericana />} />
           <Route path="/cita-visa-americana-2026-colombia" element={<CitaVisaAmericana2026 />} />
           <Route path="/documentos-entrevista-visa-americana-colombia" element={<DocumentosEntrevistaVisa />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
