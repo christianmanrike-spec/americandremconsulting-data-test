@@ -11,7 +11,7 @@ const DocumentosEntrevistaVisa = () => {
     description: "Lista completa de documentos esenciales y adicionales para tu entrevista consular en Colombia.",
     ogImage: "https://americandremconsulting-data-test.lovable.app/og-documentos-visa.jpg",
   });
-  const whatsappLink = "https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa";
+  const whatsappLink = "https://api.whatsapp.com/send/?phone=573223356137&text=Hola%2C+vengo+desde+tu+p%C3%A1gina+web+y+quiero+obtener+mi+visa&type=phone_number&app_absent=0";
 
   const documentosEsenciales = [
     {
