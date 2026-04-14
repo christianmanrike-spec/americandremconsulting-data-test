@@ -33,7 +33,7 @@ const CallToAction = () => {
               asChild
             >
               <a 
-                href="https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa"
+                href="https://api.whatsapp.com/send/?phone=573223356137&text=Hola%2C+vengo+desde+tu+p%C3%A1gina+web+y+quiero+obtener+mi+visa&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -48,7 +48,7 @@ const CallToAction = () => {
               asChild
             >
               <a 
-                href="https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa"
+                href="https://api.whatsapp.com/send/?phone=573223356137&text=Hola%2C+vengo+desde+tu+p%C3%A1gina+web+y+quiero+obtener+mi+visa&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -60,12 +60,12 @@ const CallToAction = () => {
           {/* Contact Options */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             <a 
-              href="tel:+573133906650"
+              href="tel:+573223356137"
               className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 hover:shadow-brand-1 transition-all duration-300 block"
             >
               <Phone className="w-8 h-8 mx-auto mb-3 text-accent" />
               <p className="font-montserrat font-semibold mb-1">Teléfono</p>
-              <p className="text-white/80 text-sm font-titillium">313 3906650</p>
+              <p className="text-white/80 text-sm font-titillium">322 3356137</p>
             </a>
             <a 
               href="mailto:contacto@americandream.com.co"
@@ -76,14 +76,14 @@ const CallToAction = () => {
               <p className="text-white/80 text-sm font-titillium">contacto@americandream.com.co</p>
             </a>
             <a 
-              href="https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa"
+              href="https://api.whatsapp.com/send/?phone=573223356137&text=Hola%2C+vengo+desde+tu+p%C3%A1gina+web+y+quiero+obtener+mi+visa&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 hover:shadow-brand-1 transition-all duration-300 block"
             >
               <MessageCircle className="w-8 h-8 mx-auto mb-3 text-accent" />
               <p className="font-montserrat font-semibold mb-1">WhatsApp</p>
-              <p className="text-white/80 text-sm font-titillium">313 3906650</p>
+              <p className="text-white/80 text-sm font-titillium">322 3356137</p>
             </a>
           </div>
         </div>

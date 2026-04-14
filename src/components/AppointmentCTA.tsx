@@ -1,6 +1,6 @@
 import { CalendarClock, ArrowRight } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/573133906650?text=Hola,%20necesito%20adelantar%20mi%20cita%20de%20visa";
+const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=573223356137&text=Hola%2C+necesito+adelantar+mi+cita+de+visa&type=phone_number&app_absent=0";
 
 const AppointmentCTA = () => {
   return (

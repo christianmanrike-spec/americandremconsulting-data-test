@@ -117,7 +117,7 @@ const DreamSection = () => {
               size="lg"
               className="text-base md:text-lg px-8 md:px-10 h-auto font-montserrat font-bold italic hover:scale-[1.05] transition-all duration-300 hover:shadow-glow-aqua"
               style={{ paddingTop: '1.1rem', paddingBottom: '1.1rem' }}
-              onClick={() => window.open('https://wa.me/573133906650?text=Hola,%20vengo%20desde%20tu%20p%C3%A1gina%20web%20y%20quiero%20obtener%20mi%20visa', '_blank')}
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=573223356137&text=Hola%2C+vengo+desde+tu+p%C3%A1gina+web+y+quiero+obtener+mi+visa&type=phone_number&app_absent=0', '_blank')}
             >
               Escríbenos y te contamos cómo hacerlo
             </Button>
